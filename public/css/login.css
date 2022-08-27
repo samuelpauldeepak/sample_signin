@@ -1,0 +1,70 @@
+
+
+.fa-google {
+  background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+.card-title{
+  font-size: 50px;
+}
+.card-body{
+  text-align: center;
+  margin-top: 20px;
+}
+.fb{
+font-weight: 500;
+margin: 50px 20px;
+padding:30px 50px;
+}
+
+.gle{
+  font-weight: 500;
+margin: 50px 20px;
+padding:30px 60px;
+}
+
+.fa-brands{
+  margin-right: 10px;
+}
+
+
+.submit{
+  margin-top: 40px;
+}
+
+.form{
+  text-align: left;
+  width: 460px;
+  margin: auto;
+}
+.signup{
+  text-decoration: none;
+  
+}
+@media (max-width:550px) {
+  .card-title{
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+  .card-body{
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .fb{
+  margin: 20px 5px;
+  padding:20px 35px;
+  }
+
+  .gle{
+    margin: 20px 5px;
+    padding:20px 40px;
+  }
+  footer{
+    margin: 50px;
+  }
+
+}
