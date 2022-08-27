@@ -29,11 +29,16 @@
                   <form action="index.html" method="post">
                     <div class=" input-group-lg ">
                       <label class="h6">User Email</label><br>
-                      <input type="email" name="email" class="form-control  " autocomplete="on" autofocus><br>
+                      <input type="email" name="email" class="form-control  " autocomplete="off" autofocus><br>
                     </div>
                     <div class=" input-group-lg">
-                      <label class="h6 ">User Password </label><br>
-                      <input type="password" name="Password" class="form-control" autocomplete="off">
+                      <label class="h6 ">User Password </label>&nbsp;&nbsp;&nbsp;
+                      <span class="eye" onclick="eye()">
+                      <i id="show1" class="fa-solid fa-eye show"></i>
+                      <i id="hide1" class="fa-solid fa-eye-slash hide"></i>
+                      </span>
+                      <input type="password" name="Password" class="form-control" id="myInput"autocomplete="off">
+
                       <a href="#" style="text-decoration:none">Forgot Password?</a>
                     </div>
                     <div class=" d-grid input-group-lg sign-btn">
@@ -49,7 +54,25 @@
       </div>
 
 
+<script>
+    function eye(){
+      let x= document.getElementById("myInput");
+      let y= document.getElementById("show1");
+      let z= document.getElementById("hide1");
 
+       if(x.type ==="password"){
+         x.type = "text";
+         y.style.display = "inline";
+         z.style.display = "none";
+       }
+       else{
+         x.type = "password";
+         y.style.display = "none";
+         z.style.display = "inline";
+       }
+
+    }
+</script>
 
 </body>
 
